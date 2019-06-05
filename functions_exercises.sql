@@ -71,8 +71,8 @@ order by birth_date, hire_date desc;
 # Update your queries for employees whose names start and end with 'E'. Use concat() to combine
 # their first and last name together as a single column in your results.
 
-select concat(last_name, ' ' , first_name) from employees
-where last_name like 'E%'
+select concat(first_name, ' ' , last_name) from employees
+where last_name like 'E%e'
 order by emp_no desc;
 
 # For your query of employees born on Christmas and hired in the 90s, use datediff() to find how
